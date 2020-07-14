@@ -802,10 +802,6 @@ function Base() {
         footerBox.append('<div id="cnzzInfo"></div>');
         timeIds.setCnzzTId = window.setInterval( setCnzz, 1000 );
 
-        // 设置主题信息
-//         footerBox.append('<div id="themeInfo"></div>');
-//         setTheme();
-
         // 设置页脚样式
         switch (parseInt(window.cnblogsConfig.footerStyle)) {
             case 1: init_t1();break;
@@ -872,17 +868,7 @@ function Base() {
             }
         }
 
-        // 设置加载主题信息
-        function setTheme() {
-            $('#themeInfo').html('Theme version: <a href="'+lHref
-                +'" target="_blank" style="color: #888;text-decoration: underline;">'
-                +(window.cnblogsConfig.CnVersions).substring(0,7)+'</a>'
-                +' / Loading theme version: <a href="'+rHref
-                +'" target="_blank" style="color: #888;text-decoration: underline;">'
-                +(window.cnblogsConfig.GhVersions).substring(0,7)+'</a>'
-            );
-        }
-    };
+
 
 //=================== 逻辑处理：主页处理
 
